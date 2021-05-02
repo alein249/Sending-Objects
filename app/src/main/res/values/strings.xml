@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sending-Objects</string>
+    <string name="name_text_field_heading">Name of the student</string>
+    <string name="roll_number_text_field_heading">Roll number of the student</string>
+    <string name="mobile_number_text_field_heading">Mobile number of the student</string>
+    <string name="gender_text_field_heading">Gender of the student</string>
+</resources>
