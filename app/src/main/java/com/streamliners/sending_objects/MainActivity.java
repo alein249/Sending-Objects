@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Checking that the student is not null
         if(student == null){
-            Toast.makeText(this, "No data received", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No data reveived", Toast.LENGTH_SHORT).show();
             return;
         }
 
