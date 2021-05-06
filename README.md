@@ -1,5 +1,18 @@
 # My SendingObject App
 
+I have made an application to send custom object through intents.
+
+## What new I have learned in this?
+
+- Sending custom objects through intents
+
+- up back button navigation in an application
+
+- make a activity reusable using single instance
+
+- limiting the input text and type of the input data
+
+
 
 ## Previews of the application
 
