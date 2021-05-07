@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.streamliners.sending_objects.Models.Student;
 import com.streamliners.sending_objects.databinding.ActivityObjectSenderBinding;
 
-public class ObjectSender extends AppCompatActivity {
+public class ObjectSenderActivity extends AppCompatActivity {
 
     ActivityObjectSenderBinding bind;
 
@@ -150,7 +150,7 @@ public class ObjectSender extends AppCompatActivity {
         if(student == null){
             return;
         }
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ObjectViewerActivity.class);
         intent.putExtra(Constants.STUDENT_KEY, student);
         startActivity(intent);
     }

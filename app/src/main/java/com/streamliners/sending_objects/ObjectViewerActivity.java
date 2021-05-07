@@ -1,34 +1,37 @@
 package com.streamliners.sending_objects;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.streamliners.sending_objects.Models.Student;
-import com.streamliners.sending_objects.databinding.ActivityMainBinding;
+import com.streamliners.sending_objects.databinding.ActivityObjectViewerBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class ObjectViewerActivity extends AppCompatActivity {
 
-    ActivityMainBinding bind;
+    ActivityObjectViewerBinding bind;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bind = ActivityMainBinding.inflate(getLayoutInflater());
+        bind = ActivityObjectViewerBinding.inflate(getLayoutInflater());
         setContentView(bind.getRoot());
 
         //Getting data through the intents
         getData();
     }
 
+    /**
+     * Receive data from ObjectSenderActivity
+     */
     private void getData() {
         //Validate student object which is coming through the intent
         Student student = getIntent().getExtras().getParcelable(Constants.STUDENT_KEY);
 
         //Checking that the student is not null
         if(student == null){
-            Toast.makeText(this, "No data reveived", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No data received", Toast.LENGTH_SHORT).show();
             return;
         }
 
