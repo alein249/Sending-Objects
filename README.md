@@ -16,9 +16,16 @@ I have made an application to send custom object through intents.
 
 ## Previews of the application
 
-![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable-v24/ss1.jpg)
-![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable-v24/ss2.jpg)
-![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable-v24/ss3.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so1.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so2.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so3.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so4.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so5.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so6.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so7.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so8.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so9.jpg)
+![](https://github.com/alein249/Sending-Objects/blob/master/app/src/main/res/drawable/so10.jpg)
 
 ## Download the apk
 
