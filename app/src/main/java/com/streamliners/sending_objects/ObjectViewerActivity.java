@@ -18,6 +18,9 @@ public class ObjectViewerActivity extends AppCompatActivity {
         bind = ActivityObjectViewerBinding.inflate(getLayoutInflater());
         setContentView(bind.getRoot());
 
+        // Set the title of the activity
+        setTitle("View Details");
+
         //Getting data through the intents
         getData();
     }
@@ -36,9 +39,9 @@ public class ObjectViewerActivity extends AppCompatActivity {
         }
 
         //Showing data in text fields
-        bind.showNameTextField.getEditText().setText(student.getName());
-        bind.showGenderTextField.getEditText().setText(student.getGender());
-        bind.showRollNumberTextField.getEditText().setText(student.getRollNumber());
-        bind.showMobileNumberTextField.getEditText().setText(student.getMobileNumber());
+        bind.showNameTextField.setText(student.getName());
+        bind.showGenderTextField.setText(student.getGender());
+        bind.showRollNumberTextField.setText(student.getRollNumber());
+        bind.showMobileNumberTextField.setText(student.getMobileNumber());
     }
 }
