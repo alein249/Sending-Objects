@@ -29,4 +29,4 @@ I have made an application to send custom object through intents.
 
 ## Download the apk
 
-[Apk download](https://github.com/alein249/Sending-Objects/releases/download/Latest/app-release.apk)
+[Apk download](https://github.com/alein249/Sending-Objects/releases/download/sendingobj/app-release.apk)
