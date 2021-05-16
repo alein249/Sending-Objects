@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SendingObjects">
         <activity android:name=".ObjectSenderActivity"
-            android:screenOrientation="portrait"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
