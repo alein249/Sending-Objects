@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.streamliners.sending_objects.Models.Student;
@@ -25,11 +28,41 @@ public class ObjectSenderActivity extends AppCompatActivity {
         setContentView(bind.getRoot());
 
         //Setting the title of activity
-        setTitle("ObjectSender Activity");
+        setTitle("Enter Details");
+
+        setupOnClickListenerForButton();
+        setupActionListener();
 
         //Call method to hide error
         setupHideErrorForEditText();
 
+    }
+
+    /**
+     *  To setup on click listener for button
+     */
+    private void setupOnClickListenerForButton() {
+        bind.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendData();
+            }
+        });
+    }
+
+    /**
+     * To setup the listener for the mobile text field
+     */
+    private void setupActionListener() {
+        bind.mobileNumberTextField.getEditText().setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_SEND) {
+                    sendData();
+                }
+                return true;
+            }
+        });
     }
 
     private void setupHideErrorForEditText() {
@@ -142,7 +175,10 @@ public class ObjectSenderActivity extends AppCompatActivity {
         return new Student(name,gender,rollNumber,mobileNumber);
     }
 
-    public void sendData(View view) {
+    /**
+     * to sent the data to another activity
+     */
+    public void sendData() {
         //Student object with entered details
         Student student = getDetails();
 
