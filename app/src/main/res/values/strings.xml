@@ -4,4 +4,7 @@
     <string name="roll_number_text_field_heading">Roll number of the student</string>
     <string name="mobile_number_text_field_heading">Mobile number of the student</string>
     <string name="gender_text_field_heading">Gender of the student</string>
+    <string name="male_radio_btn_subtitle">Male</string>
+    <string name="female_radio_btn_subtitle">Female</string>
+    <string name="save_data_btn">Save</string>
 </resources>
